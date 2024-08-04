@@ -8,7 +8,8 @@ body {
 
 .header{
     display: flex;
-    padding: 0 10vh;
+    padding: 0 2vh;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
@@ -22,8 +23,21 @@ body {
     gap: 2rem;
 }
 
-a{
-    color: gray;
+.header img{
+    height: auto;
+    width: 13vh;
+}
+
+.title{
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-self: center;
+    gap: 10px;
+}
+
+.header-link a{
+    color: black;
     text-decoration: none;
 }
 
@@ -32,7 +46,8 @@ a{
     flex-direction: row;
     justify-content: center;
     align-self: center;
-    padding: 32px;
+    flex-wrap: wrap;
+    padding: 32px 0;
     background-color: honeydew;
     width: 100%;
 }
@@ -42,7 +57,7 @@ a{
     width: 500px;
 }
 
-img{
+.info-pic img{
     height: 200px;
     border: 4px solid black;
     border-radius: 20px;
