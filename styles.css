@@ -19,8 +19,18 @@ body {
 .header-link{
     display: flex;
     list-style: none;
+    justify-content: center;
+    align-self: center;
     padding: 16px;
-    gap: 2rem;
+}
+
+.header-link a{
+    padding: 20px ;
+}
+
+.header-link a:hover, a:active{
+    background-color: darksalmon;
+    color: white;
 }
 
 .header img{
@@ -120,19 +130,33 @@ body {
     flex-direction: row;
     justify-content: center;
     align-self: center;
-    padding: 50px;
+    padding: 50px 100px;
 }
 
 .sign-up{
-    display: inline-block;
-    width: 150vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 50vh;
+    max-width: 150vh;
     border: 4px solid black;
     border-radius: 20px;
-    padding: 8px;
+    padding: 10px;
+    background-color: azure;
 }
 
 .sign-up button{
     flex: 1;
+    width: 100px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: white;
+    transition-duration: 0.2s;
+}
+
+.sign-up button:hover{
+    background-color: greenyellow;
+    color: white;
 }
 
 .footer{
